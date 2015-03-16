@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Socket IO Test!</title>
+	<style type="text/css">
+		.container {
+			margin: 0;
+			padding: 0;
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<div class="container" id="container">
+	0
+</div>
+<!-- <script src="socket.io.js"></script> -->
+<script src="https://cdn.socket.io/socket.io-1.3.0.js"></script>
+<script type="text/javascript">
+
+	var socket = io('http://localhost');
+  	socket.on('count', function (data) {
+    	var container = getElementById('container')[0];
+    	container.html = data.counter;
+	});
+
+</script>
+</body>
+</html>

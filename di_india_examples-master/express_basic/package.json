@@ -1,0 +1,13 @@
+{
+  "name": "node_iap",
+  "version": "0.0.1",
+  "description": "India IAP Snippets",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomer Weller",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.10.7"
+  }
+}
